@@ -15,30 +15,9 @@
 @section('content')
 <main class="mt-5">
     <div class="container">
-        <div class="row">
-            @if($article)
-                @foreach($article as $articles)
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="">
-                                Img
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    {{ $articles->name }}
-                                </h5>
-                                <p class="card-text">
-                                    Descrição
-                                </p>
-                                <a href="#" class="btn btn-primary">
-                                    Ler mais
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-            @endif
-        </div>
+        <a href="{{ route('frontend.article.index') }}" class="btn btn-secondary">
+            blog
+        </a>
     </div>
 </main>
 @endsection
