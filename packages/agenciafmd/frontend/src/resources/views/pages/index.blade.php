@@ -25,7 +25,7 @@
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    {{ $article->name }}
+                                    {{ $articles->name }}
                                 </h5>
                                 <p class="card-text">
                                     Descrição
