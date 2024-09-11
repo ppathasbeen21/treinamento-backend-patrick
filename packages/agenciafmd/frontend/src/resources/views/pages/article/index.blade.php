@@ -21,7 +21,7 @@
                                     {{ $articles->name }}
                                 </h5>
                                 <p class="card-text">
-                                    {!! $articles->description !!}
+                                    {!! Str::of($articles->description)->limit(200) !!}
                                 </p>
                                 <a href="{{ $articles->url }}" class="btn btn-primary">
                                     Ler mais
