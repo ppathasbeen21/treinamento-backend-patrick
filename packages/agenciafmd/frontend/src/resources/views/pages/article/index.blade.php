@@ -8,7 +8,7 @@
 
 @section('content')
     <div class="container">
-        <div class="row">
+        <div class="row gy-2">
             @if($article)
                 @foreach($article as $articles)
                     <div class="col-md-3">
