@@ -510,7 +510,7 @@
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "packages/local-article",
+                "url": "packages/agenciafmd/local-article",
                 "reference": "f384e25aacc4f24633de9016a14b2c2dc158f905"
             },
             "require": {

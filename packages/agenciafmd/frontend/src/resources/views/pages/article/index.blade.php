@@ -14,7 +14,7 @@
                     <div class="col-md-3">
                         <div class="card">
                             <div class="">
-                                {{ $articles->picture('image', 'img-fluid', '-ratio -ratio-16x9 w-100') }}
+                                {{ $articles->picture('image', 'img-sanitize w-100 rounded', '-ratio -ratio-16x9 w-100') }}
                             </div>
                             <div class="card-body d-flex flex-column h-100">
                                 <h5 class="card-title">

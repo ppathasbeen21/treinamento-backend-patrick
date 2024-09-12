@@ -1,0 +1,35 @@
+{
+    "name": "agenciafmd/local-article",
+    "description": "Articles",
+    "homepage": "https://github.com/agenciafmd/local-article",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "patrick",
+            "email": "patrick.bandeira@fmd.ag",
+            "homepage": "https://fmd.ag/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "../../../vendor/laravel/framework": "8.*"
+    },
+    "autoload": {
+        "files": [
+          "src/Http/helpers.php"
+        ],
+        "psr-4": {
+            "Agenciafmd\\Article\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Agenciafmd\\Article\\Providers\\ArticleServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

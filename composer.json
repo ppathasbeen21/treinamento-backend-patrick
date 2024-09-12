@@ -17,7 +17,7 @@
         },
         "agenciafmd/local-article": {
             "type": "path",
-            "url": "packages/local-article",
+            "url": "packages/agenciafmd/local-article",
             "options": {
                 "symlink": true
             }
