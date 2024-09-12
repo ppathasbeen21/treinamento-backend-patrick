@@ -22,7 +22,7 @@
                         {!! $article->description !!}
                     </div>
                     <div class="col-md-6">
-                        {{ $article->picture('image', '', '') }}
+                        {{ $article->picture('image', 'img-fluid', 'mb-0h') }}
                     </div>
                 </div>
             </div>

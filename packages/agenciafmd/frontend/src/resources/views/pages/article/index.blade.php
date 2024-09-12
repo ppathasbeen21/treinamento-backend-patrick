@@ -14,15 +14,15 @@
                     <div class="col-md-3">
                         <div class="card">
                             <div class="">
-                                {{ $articles->picture('image', '', '') }}
+                                {{ $articles->picture('image', 'img-fluid', '-ratio -ratio-16x9 w-100') }}
                             </div>
-                            <div class="card-body">
+                            <div class="card-body d-flex flex-column h-100">
                                 <h5 class="card-title">
                                     {{ $articles->name }}
                                 </h5>
-                                <p class="card-text">
+                                <div class="card-text flex-grow-1 h-100" style="flex-grow: 1 !important;">
                                     {!! Str::of($articles->description)->limit(180) !!}
-                                </p>
+                                </div>
                                 <a href="{{ $articles->url }}" class="btn btn-primary">
                                     Ler mais
                                 </a>
