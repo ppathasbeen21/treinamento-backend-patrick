@@ -12,9 +12,9 @@ Route::get('html/{any?}', [HtmlController::class, 'index'])
 Route::get('/', [FrontendController::class, 'index'])
     ->name('frontend.index');
 
-Route::get('/article', [ArticleController::class, 'index'])
+Route::get('/noticias', [ArticleController::class, 'index'])
     ->name('frontend.article.index');
-Route::get('/article/{frontArticle}', [ArticleController::class, 'show'])
+Route::get('/noticias/{frontArticle?}', [ArticleController::class, 'show'])
     ->name('frontend.article.show');
 
 Route::get('/webvitals/{environment}', [WebVitalsController::class, 'index'])

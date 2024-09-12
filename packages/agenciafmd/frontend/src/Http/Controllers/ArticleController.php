@@ -4,6 +4,7 @@ namespace Agenciafmd\Frontend\Http\Controllers;
 
 use Agenciafmd\Article\Models\Article;
 use App\Http\Controllers\Controller;
+use Illuminate\Contracts\View\View;
 
 class ArticleController extends Controller
 {
@@ -16,13 +17,14 @@ class ArticleController extends Controller
 
         return view('agenciafmd/frontend::pages.article.index', $view);
     }
-    public function show()
+    public function show(Article $frontArticle): View
     {
         $view['article'] = Article::query()
             ->isActive()
-            ->inRandomOrder()
-            ->take(4)
-            ->get();
+            ->where('id', $frontArticle->id)
+//            ->whereBelongsTo($frontArticle->category)
+//            ->inRandomOrder()
+            ->first();
 
         return view('agenciafmd/frontend::pages.article.show', $view);
     }
