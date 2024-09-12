@@ -22,8 +22,6 @@ class ArticleController extends Controller
         $view['article'] = Article::query()
             ->isActive()
             ->where('id', $frontArticle->id)
-//            ->whereBelongsTo($frontArticle->category)
-//            ->inRandomOrder()
             ->first();
 
         return view('agenciafmd/frontend::pages.article.show', $view);
